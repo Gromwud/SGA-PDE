@@ -4,7 +4,7 @@ import scipy.io as scio
 import torch
 import torch.nn as nn
 
-problem = 'chafee-infante' # 'Burgers' # 'chafee-infante' # 'Kdv' #'PDE_divide' # 'PDE_compound'
+problem = 'Burgers' # 'Burgers' # 'chafee-infante' # 'Kdv' #'PDE_divide' # 'PDE_compound'
 seed = 0
 device = torch.device('cuda:0')
 # device = torch.device('cpu')
@@ -82,7 +82,7 @@ if problem == 'PDE_compound':
     
 # Burgers -u*ux+0.1*uxx
 if problem == 'Burgers':
-    data = scio.loadmat('./data/burgers.mat')
+    data = scio.loadmat(r'../data/burgers.mat')
     u=data.get("usol")
     x=np.squeeze(data.get("x"))
     t=np.squeeze(data.get("t").reshape(1,201))
