@@ -17,7 +17,7 @@ from configure import divide
 
 simple_mode = True
 see_tree = None
-plot_the_figures = True
+plot_the_figures = False
 use_metadata = False
 use_difference = True
 

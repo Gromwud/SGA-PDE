@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 
 problem = 'Burgers' # 'Burgers' # 'chafee-infante' # 'Kdv' #'PDE_divide' # 'PDE_compound'
-seed = 0
+seed = np.random.randint(10000)
 device = torch.device('cuda:0')
 # device = torch.device('cpu')
 
