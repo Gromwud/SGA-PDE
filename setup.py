@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="dso",
+    name="sga",
     version="0.1.0",
     packages=find_packages(where="."),  # Or explicitly: packages=['dso.dso']
     package_dir={"": "."},  # Important for nested structure
